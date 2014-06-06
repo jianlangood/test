@@ -1,0 +1,34 @@
+1.LayoutAnimationController 用于为一个lauout里面的控件，或者一个ViewGroup里面的控件设置动画效果。可以在xml文件中设置，也可以在代码中设置。
+2.每一个控件都有相同的动画效果，这些动画效果在不同的时间显示出来。
+
+在代码中使用LayoutAnimationController
+1.创建一个Animation对象
+    可以通过装载xml文件，或者使用Animation的构造函数创建
+2.创建LayoutAnimationController对象：
+LayoutAnimationController lac = new LayoutAnimationController(animation);
+3.设置控件显示的顺序
+lac.setOrder(LayoutAnmitionController.xxx);
+4.为ListView 设置LayoutAnmitionController属性
+listView.LayoutAnmitionController(lac);
+
+Json 数据解析
+1，解析数组
+2.解析对象
+3.解析键值对
+
+扫描已配对的蓝牙设备
+BluetoothAdapter：该类对象代表本地的蓝牙适配器
+BluetoothDevice代表远程的Bluetooth设备
+
+1.获得BluetoothAdapter对象
+2.判断当前的设备中的是否拥有蓝牙设备
+3.判断当前设备中的蓝牙设备是否已经打开
+4.得到所有已经配对的蓝颜设备对象
+
+ 
+UserLocation 
+获取用户的当前位置
+1.在AndroidMainfest.xml当中声明相应的权限
+2.获取LocationManager对象
+3.选择LocationProvider
+4.绑定LocationListener对象；
